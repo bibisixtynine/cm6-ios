@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>cm6</title>
+
+    <meta
+      name="viewport"
+      content="viewport-fit=cover,user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <style>
+      * {
+        user-select: auto;
+      }
+    </style>
+    <script type="module" src="index.js"></script>
+  </head>
+
+  <body>
+    <div id="editor"></div>
+    <div>
+      <h1>Codemirror6 with Safari iOS/iPadOS text selection bug :</h1>
+
+      <p>
+        1) Try to select the 12345678901 number above by double-tapping on it : the
+        selection works, but the options menu 'cut-copy-find' doesn't appear.
+      </p>
+
+      <p>
+        2) Then delete (line 1) or (line 2) or just (the last '1' digit of the
+        number), or (add '2345' next to '12345678901'), touble-tap again : this time it's OK and the options menu is
+        there.
+      </p>
+      
+      <a href="https://glitch.com/edit/#!/remix/cm6-ios"><img src="https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button-v2.svg" alt="Remix on Glitch" /></a>
+      
+    </div>
+  </body>
+</html>
